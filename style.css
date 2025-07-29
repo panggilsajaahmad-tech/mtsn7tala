@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(#f9fff9, #e5fbe5); /* putih ke hijau muda */
+  background: linear-gradient(to bottom, #d4f3e1, #a3e9bd, #80d8a0); /* putih ke hijau muda */
   color: #2e4e2e; /* hijau gelap natural */
 }
 
@@ -259,4 +259,77 @@ header {
 .info-text h2 {
   margin-top: 0;
   color: #003e8a;
+}
+
+.kontak {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f4fff8;
+  border-top: 3px solid #86c23e;
+  margin-top: 60px;
+}
+
+.kontak h2 {
+  color: #007b33;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.kontak-kanan {
+  width: 100%;
+  text-align: right;
+  padding: 40px 60px;
+  background: #f4fff8;
+}
+
+.kontak-kanan h2 {
+  color: #007b33;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.kontak-kanan p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.kontak-horizontal {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.sosmed {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  color: white;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.sosmed.wa { background-color: #25D366; }
+.sosmed.ig { background-color: #E4405F; }
+.sosmed.fb { background-color: #3B5998; }
+
+.sosmed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .kontak-kanan {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .kontak-horizontal {
+    justify-content: center;
+  }
 }
